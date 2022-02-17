@@ -1,0 +1,378 @@
+<head>
+    <style>
+      @font-face {
+        font-family: "proxima_nova_rgregular";
+        src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+        src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+            format("woff"),
+          url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+            format("truetype"),
+          url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+            format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "proxima_nova_rgbold";
+        src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+        src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff")
+            format("woff"),
+          url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf")
+            format("truetype"),
+          url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold")
+            format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+  
+      @font-face {
+        font-family: "adelle_rgregular";
+        src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot");
+        src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff")
+            format("woff"),
+          url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf")
+            format("truetype"),
+          url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular")
+            format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+      }
+      .box {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+      }
+      .OrglensLogo{
+        position: absolute;
+        z-index: 9;
+        content: url(ORGLENS_original.png);
+        top: 4.5%;
+        left: 88%;
+        max-width: 10%;
+        max-height: 10%;
+      }
+      .ClientLogo {
+        position: absolute;
+        z-index: 9;
+        content: url(Client.png);
+        top: -3%;
+        left: 1%;
+        max-width: 20%;
+        max-height: 20%;
+      }
+      .Copyright {
+        position: absolute;
+        z-index: 9;
+        content: url(copyright.png);
+        top: 90%;
+        left: 45%;
+        max-width: 1.5%;
+        max-height: 1.5%;
+      }
+      .CopyRightText{
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        z-index: 9;
+        position: absolute;
+        color: rgb(44,44,44);
+        font-size:11px;
+        top:90.18%;
+        left:46%
+      }
+      .sections {
+        padding:20px;
+        transition: transform .2s;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        margin: 0;
+        position: absolute;
+        top: 80%;
+        font-size: 18px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        
+      }
+      .allstyle {
+        
+        cursor: pointer;
+        z-index: 9;
+        background-color: none;
+        font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+      }
+  
+      .tileCulture {
+        left: 28%;
+        color: #ac92eb;
+      }
+      .tileInclusion {
+        left: 38%;
+        color:#4fc1eb
+      }
+      .tileEngagement {
+        left: 48%;
+        color: #ed5564;
+       
+      }
+      .tileAdvocacy {
+        left: 58%;
+        color: #a0d568;
+        
+      }
+      .tileTeam {
+        left: 68%;
+        color:#ffc300;
+        
+        
+      }
+  
+   
+      .Orglens {
+        width:700px;
+        font-size: 16px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        position: absolute;
+        top: 40%;
+        left:31%;
+        color: rgb(28, 27, 27);
+      }
+      .tooltipCulture {
+        width:700px;
+        font-size: 16px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: none;
+        position: absolute;
+        top: 40%;
+        left:31%;
+         color: rgb(28, 27, 27);
+      }
+      .culture:hover .tooltipCulture {
+        display: block;
+      }
+      .culture:hover .Orglens {
+        display: none;
+      }
+      .tooltipInclusion {
+        width:700px;
+        font-size: 16px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: none;
+        position: absolute;
+        top: 40%;
+        left:31%;
+         color: rgb(28, 27, 27);
+      }
+      .Inclusion:hover .tooltipInclusion {
+        display: block;
+      }
+      .Inclusion:hover .Orglens {
+        display: none;
+      }
+      .tooltipEngagement {
+        width:700px;
+        font-size: 16px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: none;
+        position: absolute;
+        top: 40%;
+        left:31%;
+         color: rgb(28, 27, 27);
+      }
+      .Engagement:hover .tooltipEngagement {
+        display: block;
+      }
+      .Engagement:hover .Orglens {
+        display: none;
+      }
+      .tooltipAdvocacy {
+        width:700px;
+        font-size: 16px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: none;
+        position: absolute;
+        top: 40%;
+        left:31%;
+         color: rgb(28, 27, 27);
+      }
+      .Advocacy:hover .tooltipAdvocacy {
+        display: block;
+      }
+      .Advocacy:hover .Orglens {
+        display: none;
+      }
+      .tooltipTeam {
+        width:700px;
+        font-size: 16px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        display: none;
+        position: absolute;
+        top: 40%;
+        left:31%;
+         color: rgb(28, 27, 27);
+      }
+      .Team:hover .tooltipTeam {
+        display: block;
+      }
+      .Team:hover .Orglens {
+        display: none;
+      }
+      .sections:hover {
+        position:absolute;
+        zoom:1.3;
+  
+  }
+      
+  
+    </style>
+  
+    <script src="3d-force-graph.js "></script>
+    <!--<script src="../../dist/3d-force-graph.js"></script>-->
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="OrglensLogo"></div>
+      <div class="ClientLogo"></div>
+      <div class="Copyright"></div>
+      <div >
+        <span class="CopyRightText">2022 Orglens.com</span>
+      </div>
+      
+      <div class="box" id="3d-graph"></div>
+      <div class="culture">
+        <div class="allstyle" onClick="window.open('https://www.google.com')">
+          <span class="sections tileCulture">Culture</span>
+          <span class="tooltipCulture"
+            >Information About Culture: Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen
+            book.
+            It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span
+          >
+          <span class="Orglens"
+            >Organizational Network Analytics stems from Social Network Analysis applied in the organizational context.
+             The OrgLens platform maps and visualize the hidden, informal, social networks in your organisation and
+              generates insights on culture, engagement, inclusion, collaboration, high-potential/ highly influential 
+              employees, new hire integration, and more.</span
+          >
+        </div>
+      </div>
+      <div class="Inclusion">
+        <div class="allstyle" onClick="window.open('https://www.google.com')">
+          <span class="sections tileInclusion">Inclusion</span>
+          <span class="tooltipInclusion"
+            >Information About Inclusion: Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen
+            book.
+            It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.</span
+          >       
+      </div>
+      <div class="Engagement">
+        <div class="allstyle" onClick="window.open('https://www.google.com')">
+          <span class="sections tileEngagement">Engagement</span>
+          <span class="tooltipEngagement"
+            >Information About Engagement: Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen
+            book.
+            It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.</span
+          >       
+      </div>
+      <div class="Advocacy">
+        <div class="allstyle" onClick="window.open('https://www.google.com')">
+          <span class="sections tileAdvocacy">Advocacy</span>
+          <span class="tooltipAdvocacy"
+            >Information About Advocacy: Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen
+            book.
+            It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.</span
+          >       
+      </div>
+    </div>
+    <div class="Team">
+      <div class="allstyle" onClick="window.open('https://www.google.com')">
+        <span class="sections tileTeam" style="text-align:center">Team Effectiveness <br> and <br>Innovation</span>
+        <span class="tooltipTeam"
+          >Information About Team Effectiveness and Innovation: Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it to make a type specimen
+          book.
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.</span
+        >       
+    </div>
+  </div>
+  
+    <script>
+      // Random tree
+      const N = 1000;
+      const gData = {
+        nodes: [...Array(N).keys()].map((i) => ({ id: i })),
+        links: [...Array(N).keys()]
+          .filter((id) => id)
+          .map((id) => ({
+            source: id,
+            target: Math.round(Math.random() * (id - 1)),
+          })),
+      };
+  
+      const distance = 1000;
+  
+      const Graph = ForceGraph3D()(document.getElementById("3d-graph"))
+        .jsonUrl("graph.json")
+        .enableNodeDrag(false)
+        .enableNavigationControls(false)
+        .showNavInfo(false)
+        .cameraPosition({ z: distance })
+  
+        .nodeRelSize(0.8)
+        .nodeColor((node) => {
+          return "#212121";
+        })
+        .linkColor((node) => {
+          return "#E1E1E1";
+        })
+        .nodeOpacity(0.6)
+        .linkOpacity(0.6)
+        .linkWidth(0.3)
+        .backgroundColor("white");
+  
+      // camera orbit
+      let angle = 150;
+      setInterval(() => {
+        Graph.cameraPosition({
+          x: distance * Math.sin(angle),
+          z: distance * Math.cos(angle),
+        });
+        angle += Math.PI / 10500;
+      }, 10);
+    </script>
+  </body>
+  
