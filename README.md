@@ -1,7 +1,7 @@
 # Landing_Page
 [New_Design_WO_OL](https://physicalpixel.github.io/Landing_Page/New_Design_WO_OL/New_Design_WO_OL.html)
 
-[New Design_Disconnected_OL](https://physicalpixel.github.io/Landing_Page/New_Design/New_Design_Disconnected.html)
+[New Design_Disconnected_OL](https://physicalpixel.github.io/Landing_Page/New_Design_Disconnected/New_Design_Disconnected.html)
 
 [New Design_OL](https://physicalpixel.github.io/Landing_Page/New_Design/New_Design.html)
 
