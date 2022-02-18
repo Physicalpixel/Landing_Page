@@ -58,7 +58,7 @@
       left: 0;
       opacity: 1;
     }
-    .OrglensLogo {
+    .OrglensLogo{
       position: absolute;
       z-index: 9;
       content: url(ORGLENS_original.png);
@@ -85,28 +85,30 @@
       max-width: 1.5%;
       max-height: 1.5%;
     }
-    .CopyRightText {
+    .CopyRightText{
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       z-index: 9;
       position: absolute;
-      color: rgb(44, 44, 44);
-      font-size: 11px;
-      top: 90.18%;
-      left: 46%;
+      color: rgb(44,44,44);
+      font-size:11px;
+      top:90.18%;
+      left:46%
     }
     .sections {
-      padding: 20px;
-      transition: transform 0.2s;
+      padding:20px;
+      transition: transform .2s;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       margin: 0;
       position: absolute;
       top: 80%;
-      font-size: 18px;
+    font-size: 16pt;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       opacity: 1;
+      
     }
     .allstyle {
+      
       cursor: pointer;
       z-index: 9;
       background-color: none;
@@ -115,40 +117,50 @@
 
     .tileCulture {
       left: 28%;
+     
     }
     .tileInclusion {
       left: 38%;
+      
     }
     .tileEngagement {
       left: 48%;
+    
+     
     }
     .tileAdvocacy {
       left: 58%;
+   
+      
     }
     .tileTeam {
       left: 68%;
+     
+      
+      
     }
 
+ 
     .Orglens {
-      width: 700px;
-      font-size: 16px;
+     width:900px;
+   font-size: 12pt;
       text-align: center;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       position: absolute;
       top: 40%;
-      left: 31%;
+      left:25%;
       color: rgb(28, 27, 27);
     }
     .tooltipCulture {
-      width: 700px;
-      font-size: 16px;
+     width:900px;
+   font-size: 12pt;
       text-align: center;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       display: none;
       position: absolute;
       top: 40%;
-      left: 31%;
-      color: rgb(28, 27, 27);
+      left:25%;
+       color: rgb(28, 27, 27);
     }
     .culture:hover .tooltipCulture {
       display: block;
@@ -157,15 +169,15 @@
       display: none;
     }
     .tooltipInclusion {
-      width: 700px;
-      font-size: 16px;
+     width:900px;
+   font-size: 12pt;
       text-align: center;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       display: none;
       position: absolute;
       top: 40%;
-      left: 31%;
-      color: rgb(28, 27, 27);
+      left:25%;
+       color: rgb(28, 27, 27);
     }
     .Inclusion:hover .tooltipInclusion {
       display: block;
@@ -174,15 +186,15 @@
       display: none;
     }
     .tooltipEngagement {
-      width: 700px;
-      font-size: 16px;
+     width:900px;
+   font-size: 12pt;
       text-align: center;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       display: none;
       position: absolute;
       top: 40%;
-      left: 31%;
-      color: rgb(28, 27, 27);
+      left:25%;
+       color: rgb(28, 27, 27);
     }
     .Engagement:hover .tooltipEngagement {
       display: block;
@@ -191,15 +203,15 @@
       display: none;
     }
     .tooltipAdvocacy {
-      width: 700px;
-      font-size: 16px;
+     width:900px;
+   font-size: 12pt;
       text-align: center;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       display: none;
       position: absolute;
       top: 40%;
-      left: 31%;
-      color: rgb(28, 27, 27);
+      left:25%;
+       color: rgb(28, 27, 27);
     }
     .Advocacy:hover .tooltipAdvocacy {
       display: block;
@@ -208,15 +220,15 @@
       display: none;
     }
     .tooltipTeam {
-      width: 700px;
-      font-size: 16px;
+     width:900px;
+   font-size: 12pt;
       text-align: center;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       display: none;
       position: absolute;
       top: 40%;
-      left: 31%;
-      color: rgb(28, 27, 27);
+      left:25%;
+       color: rgb(28, 27, 27);
     }
     .Team:hover .tooltipTeam {
       display: block;
@@ -225,9 +237,12 @@
       display: none;
     }
     .sections:hover {
-      position: absolute;
-      zoom: 1.3;
-    }
+      position:absolute;
+      zoom:1.3;
+
+}
+    
+
   </style>
 
   <script src="3d-force-graph.js "></script>
@@ -239,22 +254,24 @@
     <div class="OrglensLogo"></div>
     <div class="ClientLogo"></div>
     <div class="Copyright"></div>
-    <div>
+    <div >
       <span class="CopyRightText">2022 Orglens.com</span>
     </div>
-
+    
     <div class="box" id="3d-graph"></div>
     <div class="culture">
       <div class="allstyle" onClick="window.open('https://www.google.com')">
         <span class="sections tileCulture">Culture</span>
         <span class="tooltipCulture"
           >Information About Culture: Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took
-          a galley of type and scrambled it to make a type specimen book. It has
-          survived not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. Lorem Ipsum is simply
-          dummy text of the printing and typesetting industry.</span
+          standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it to make a type specimen
+          book.
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span
         >
+       
       </div>
     </div>
     <div class="Inclusion">
@@ -262,54 +279,54 @@
         <span class="sections tileInclusion">Inclusion</span>
         <span class="tooltipInclusion"
           >Information About Inclusion: Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took
-          a galley of type and scrambled it to make a type specimen book. It has
-          survived not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged.</span
-        >
-      </div>
+          standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it to make a type specimen
+          book.
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.</span
+        >     
+        </div>  
     </div>
     <div class="Engagement">
       <div class="allstyle" onClick="window.open('https://www.google.com')">
         <span class="sections tileEngagement">Engagement</span>
         <span class="tooltipEngagement"
           >Information About Engagement: Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took
-          a galley of type and scrambled it to make a type specimen book. It has
-          survived not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged.</span
-        >
-      </div>
+          standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it to make a type specimen
+          book.
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.</span
+        >  
+        </div>
+
     </div>
     <div class="Advocacy">
       <div class="allstyle" onClick="window.open('https://www.google.com')">
         <span class="sections tileAdvocacy">Advocacy</span>
         <span class="tooltipAdvocacy"
           >Information About Advocacy: Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took
-          a galley of type and scrambled it to make a type specimen book. It has
-          survived not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged.</span
-        >
-      </div>
-    </div>
-    <div class="Team">
-      <div class="allstyle" onClick="window.open('https://www.google.com')">
-        <span class="sections tileTeam" style="text-align: center"
-          >Team Effectiveness <br />
-          and <br />Innovation</span
-        >
-        <span class="tooltipTeam"
-          >Information About Team Effectiveness and Innovation: Lorem Ipsum has
-          been the industry's standard dummy text ever since the 1500s, when an
-          unknown printer took a galley of type and scrambled it to make a type
-          specimen book. It has survived not only five centuries, but also the
-          leap into electronic typesetting, remaining essentially
-          unchanged.</span
-        >
-      </div>
+          standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it to make a type specimen
+          book.
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.</span
+        >       
     </div>
   </div>
+  <div class="Team">
+    <div class="allstyle" onClick="window.open('https://www.google.com')">
+      <span class="sections tileTeam" style="text-align:center">Team Effectiveness <br> and <br>Innovation</span>
+      <span class="tooltipTeam"
+        >Information About Team Effectiveness and Innovation: Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen
+        book.
+        It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged.</span
+      >       
+  </div>
+</div>
 
   <script>
     // Random tree
@@ -320,11 +337,11 @@
         .filter((id) => id)
         .map((id) => ({
           source: id,
-          target: Math.round(Math.random() * (id - 1)),
+          target: Math.round(Math.random() * (id-1)),
         })),
     };
 
-    const distance = 1000;
+    const distance = 1100;
 
     const Graph = ForceGraph3D()(document.getElementById("3d-graph"))
       .enableNodeDrag(false)
@@ -352,7 +369,7 @@
         x: distance * Math.sin(angle),
         z: distance * Math.cos(angle),
       });
-      angle += 0.000091;
+      angle += 0.00091
     }, 10);
   </script>
 </body>
