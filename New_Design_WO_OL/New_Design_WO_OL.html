@@ -105,13 +105,12 @@
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       opacity: 1;
-      color: rgb(28, 27, 27);
     }
     .allstyle {
       cursor: pointer;
       z-index: 9;
       background-color: none;
-      font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     .tileCulture {
@@ -282,7 +281,6 @@
         >
       </div>
     </div>
-
     <div class="Advocacy">
       <div class="allstyle" onClick="window.open('https://www.google.com')">
         <span class="sections tileAdvocacy">Advocacy</span>
@@ -326,7 +324,7 @@
         })),
     };
 
-    const distance = 800;
+    const distance = 1000;
 
     const Graph = ForceGraph3D()(document.getElementById("3d-graph"))
       .enableNodeDrag(false)
@@ -345,7 +343,7 @@
       .nodeOpacity(0.4)
       .linkOpacity(0.6)
       .linkWidth(0.2)
-      .backgroundColor("#f2f2f2");
+      .backgroundColor("white");
 
     // camera orbit
     let angle = 150;
@@ -354,7 +352,7 @@
         x: distance * Math.sin(angle),
         z: distance * Math.cos(angle),
       });
-      angle += Math.PI / 10500;
+      angle += 0.000091;
     }, 10);
   </script>
 </body>
