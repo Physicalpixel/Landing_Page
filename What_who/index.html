@@ -211,6 +211,8 @@
       <span class="subtextwho subtext5">Engagement</span>
       <span class="subtextwho subtext6">OnPS</span>
     </div>
+
+    <div class="box" id="3d-graph"></div>
   </div>
 
   <script>
@@ -237,15 +239,15 @@
 
       .nodeRelSize(0.8)
       .nodeColor((node) => {
-        return "white";
+        return "grey";
       })
       .linkColor((node) => {
-        return "white";
+        return "grey";
       })
       .nodeOpacity(0.6)
       .linkOpacity(0.2)
       .linkWidth(0.2)
-      .backgroundColor("#141d26");
+      .backgroundColor("white");
 
     // camera orbit
     let angle = 150;
